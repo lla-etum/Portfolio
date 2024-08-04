@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f1f5f9;
+}
+
+.navbar {
+    height: 72px;
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-sizing: border-box;
+    height: 72px;
+    transition: height 500ms ease;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    float: left;
+    padding: 8px;
+}
+
+a:hover {
+    color: #77a7e8;
+    transition: color 500ms ease;
+}
+
+i:hover {
+    color: #77a7e8;
+    transition: color 500ms ease
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    transition: color 500ms ease
+}
+
+.nav-container {
+    display: flex;
+    overflow: hidden;
+    margin-left: -40px;
+}
+
+.nav-reseau {
+    margin-left: -40px;
+    display: flex;
+}
+
+i {
+    color: #57a8e7;
+    transition: color 500ms ease
+}
+
+.burger {
+    cursor: pointer;
+    display: none;
+    font-size: 1.5em;
+    transform: rotate(0deg);
+    transition: transform 500ms ease-in-out;
+}
+
+@media screen and (max-width: 799px) {
+    li {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    i:hover {
+        color: black;
+        transform: rotate(90deg);
+        transition: transform 500ms ease, color 500ms ease;
+    }
+
+    i:not(:hover) {
+        transform: rotate(0deg);
+        transition: transform 500ms ease, color 500ms ease;
+    }
+}
+
+.interrieur {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.lien {
+    cursor: pointer;
+    padding: 11px 0 11px 1.7rem;
+    margin: 0;
+}
+
+.lien a {
+    color: black;
+    transition: color 500ms ease;
+    display: inline-block;
+    transform: translate(0px);
+    transition: transform 800ms ease;
+}
+
+.lien:hover a {
+    color: #50a7e7;
+    transform: translate(10px);
+    transition: color 500ms ease, transform 800ms ease;
+}
+
+.lien:hover {
+    background-color: #a7d6f7;
+}

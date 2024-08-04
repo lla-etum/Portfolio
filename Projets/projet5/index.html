@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="script" href="script.js" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+  
+      <a href=#><img class="navbar__logo" src="https://cdn.discordapp.com/attachments/525265769479798784/1194303721249722429/image.png?ex=65afdd04&is=659d6804&hm=28c5195668755ac7ddc29e396df9ddcb3bfdf736dac5f65444ceb7876cb9485f&" alt="logo Siko Mobility"></a>
+      
+      <div class="navbar__links">
+        <a class="navbar__link" href="#">Nos services</a>
+        <a class="navbar__link" href="#">Contact</a>
+        <a class="navbar__link navbar__link--border" onclick="ouvrirPopup()" href="#">Simulation</a>
+        <div class="fond-popup" onclick="fermerPopup()"></div>
+
+        <div class="popup">
+          <h2>Simulez votre mensualité</h2>
+          <p><strong>Siko Mobility</strong> vous propose de simulez votre mensualité en fonction de votre apport et de la durée de votre crédit.</p>
+          <form>
+            <label for="montant">Montant à Financer :</label>
+            <input type="number" name="montant" id="montant" size="50" maxlength="50">
+
+            <label for="apport">Apport :</label>
+            <input type="number" name="apport" id="apport" placeholder="0" size="50" maxlength="50">
+
+            <label for="duree">Durée :</label>
+            <input type="number" name="duree" id="duree" placeholder="0" size="50" maxlength="50">
+          </form>
+
+          <p>0.00 € / mois *</p>
+          <button onclick="fermerPopup()">Faire une demande</button>
+          <p>* Simulation préliminaire non contractuelle. Un crédit vous engage et doit être remboursé. Vérifiez vos capacités de remboursement avant de vous engager. Des frais de dossiers peuvent s’appliquer.</p>
+        </div>
+
+        <script>
+          function ouvrirPopup() {
+            document.querySelector('.fond-popup').style.display = 'block';
+            document.querySelector('.popup').style.display = 'block';
+          }
+
+          function fermerPopup() {
+            document.querySelector('.fond-popup').style.display = 'none';
+            document.querySelector('.popup').style.display = 'none';
+          }
+        </script>
+
+        <a class="navbar__link" href="#"><i class="fa-regular fa-user"></i></a>
+      </div>
+
+      <div class="main_box">
+        <input type="checkbox" id="check">
+        <div class="btn_one">
+          <label for="check">
+            <i class="fas fa-bars"></i>
+          </label>
+        </div>
+        <div class="sidebar_menu">
+            <div class="btn_two">
+              <label for="check">
+                <i class="fas fa-times"></i>
+              </label>
+            </div>
+          <div class="menu">
+            <ul>
+              <li>
+                <i class="fas fa-sliders-h"></i>
+                <a href="#">Nos Services</a>
+              </li>
+              <li>
+                <i class="fas fa-phone-volume"></i>
+                <a href="#">Contact</a>
+              </li>
+              <li>
+                <i class="fas fa-stream"></i>
+                <a href="#">Simulation</a>
+              </li>
+              <li>
+              <i class="fas fa-qrcode"></i>
+                <a href="#">Connexion</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+    </nav>
+    
+    <header>
+      <div class="swiper-container">
+    
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="cta__banniere" src="https://previews.dropbox.com/p/thumb/ACIm2MY_lvsB6YNn8P_vshc7JgD6SPcP0JJAF-7vxkI2UR91bNun3GqFJRfULtfv5IalbKtwVflr55l3Tfjlyjkvb-xQa2C3cgVd2XJT0qZnCVnB7BYovn8D7jlWh_R3aFORDX0s4rRu9bW8kFn7wfQHBSau08t_gyWSsJVGwHa5EfAZZT3zthzFDXn7yaaLa9URF4gvKX01_plV9De-lr6By_raSXhWWT5o9SvbpGNeTCVa2HxnBHQF4hWOkghbjLOKr_CUYKGfAazShw4pgWwYQPMNdkiIYkno6Vs77rgwbhQ8MDPQlFaJgNKJYh40p30nk1zxGIjbdRZzyGHs20Ir/p.png" alt="velo" >
+
+            <div class="cta__centre">
+
+              <h2 class="cta__centre--texte">Forfait Mobilité</h2>
+
+              <div class="btn">
+                <a class="btn__lien" href="#">
+                  <span class="headshakes">Abonnement</span>
+                  <div class="progress"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+    
+            <img class="cta__banniere" src="https://previews.dropbox.com/p/thumb/ACIm2MY_lvsB6YNn8P_vshc7JgD6SPcP0JJAF-7vxkI2UR91bNun3GqFJRfULtfv5IalbKtwVflr55l3Tfjlyjkvb-xQa2C3cgVd2XJT0qZnCVnB7BYovn8D7jlWh_R3aFORDX0s4rRu9bW8kFn7wfQHBSau08t_gyWSsJVGwHa5EfAZZT3zthzFDXn7yaaLa9URF4gvKX01_plV9De-lr6By_raSXhWWT5o9SvbpGNeTCVa2HxnBHQF4hWOkghbjLOKr_CUYKGfAazShw4pgWwYQPMNdkiIYkno6Vs77rgwbhQ8MDPQlFaJgNKJYh40p30nk1zxGIjbdRZzyGHs20Ir/p.png" alt="velo" >
+
+            <div class="cta__centre">
+
+              <h2 class="cta__centre--texte">Autre Services</h2>
+
+              <div class="btn">
+                <a class="btn__lien" href="#">
+                  <span class="headshakes">Abonnement</span>
+                  <div class="progress"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          pagination: {
+            clickable: true,
+          },
+          autoplay: {
+            delay: 10000,
+          },
+          loop: true,
+        });
+      </script>
+    </header>
+    
+    <main>
+      <h1 class="titre">Découvrez notre gamme de services </br>pour toutes les mobilités</h1>
+    
+      <section>
+        <div class="swiper-container2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="offre">
+                <a class="abonnement1" href="#"><img src="https://previews.dropbox.com/p/thumb/ACIhGOPhu1g6FndXKze3thpXOFf3fpNW2oYXurrnkTFDcsu6DRiOtFfMknKPRn-uTKsG8UD7GEG2mU_Rp2vqZ5wn0kkqjHtEDgwTTA-1h__ylqbWyFM261PNVuWQ_4RiC3SNc5-voepiwLJPJJTnwC4SqZnswrvQwPfbRCXhovujBRoQTFmNqp5oK1v1Q347tY81xXlmgFL4VDcBUekNFYfCAIWtBKGPKHgrE8aLldIccF0759LIyHa5yS7VLCppg4A4IKEWrpoHhDXrnqkLoCscGGos7Ms00KRjvez5jTe-lZalmoRVWKQsrInfGqq08tsgfKn9AKmQoO09PDClrQ5v/p.png" alt="Moto">
+                  <div class="offre__overlay">
+                    <h2 class="offre__overlay--1">Paiement 3/4/10 fois</h2>
+                    <p>Faites un paiement en 3, 4 ou 10 fois en carte bleue. C'est sans justificatif.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          
+            <div class="swiper-slide">
+              <div class="offre">
+                <a class="abonnement2" href="#"><img src="https://previews.dropbox.com/p/thumb/ACKqAiBQcNdjVNSP802Rl50hJ5W6rmlkxN_hN_sjKKbEINSFYzwR-EE-ofHfOcRMC-1vH7bULgLnPRFMOR0J4PabRC86OoEg2WmQbENcuH9dMHxcEmTd8PV9-l9gorGpnkfM2cm2tzRUvgSVqCjYrPQqvY16bCbGAbZF-PbncN0OZX0XP5G_DheBnSpqeIgtRljaxt68k1rdDjZG8iJp93YXVPf1N3jA6SaAxjjrb4zrZghnX3jBsKPYE2wkMm4ONJh27biZJ6xTPLcvhhJ16Uctsx8GDwTlYYBrYpWftf8e6gy581e_kEepE5cvc9pAMez5ysxwrHeESvap6P-kw9Am/p.png" alt="Velo">
+                  <div class="offre__overlay">
+                    <h2 class="offre__overlay--2">Financement 12 à 18 mois</h2>
+                    <p>Faites une demande de financement de 12 à 60 fois. Obtenez un accord d'une de nos banques partenaires.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="offre">
+                <a class="abonnement3" href="#"><img src="https://previews.dropbox.com/p/thumb/ACKqAiBQcNdjVNSP802Rl50hJ5W6rmlkxN_hN_sjKKbEINSFYzwR-EE-ofHfOcRMC-1vH7bULgLnPRFMOR0J4PabRC86OoEg2WmQbENcuH9dMHxcEmTd8PV9-l9gorGpnkfM2cm2tzRUvgSVqCjYrPQqvY16bCbGAbZF-PbncN0OZX0XP5G_DheBnSpqeIgtRljaxt68k1rdDjZG8iJp93YXVPf1N3jA6SaAxjjrb4zrZghnX3jBsKPYE2wkMm4ONJh27biZJ6xTPLcvhhJ16Uctsx8GDwTlYYBrYpWftf8e6gy581e_kEepE5cvc9pAMez5ysxwrHeESvap6P-kw9Am/p.png" alt="Velo">
+                  <div class="offre__overlay">
+                    <h2 class="offre__overlay--2">Forfait Mobilité</h2>
+                    <p>Souscrivez à un abonnement assurance, assistance, garantie ou maintenance. Sans engagement.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <script>
+          var swiper = new Swiper('.swiper-container2', {
+            direction: 'horizontal',
+            slidesPerView: 3,
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+            },
+            autoplay: {
+              delay: 10000,
+            },
+            
+          });
+
+          var swiperConfigMobile = {
+            direction: 'horizontal',
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+              clickable: true,
+            },
+            autoplay: {
+              delay: 10000,
+            },
+          };
+
+          var swiperMobile = new Swiper('.swiper-container2-mobile', swiperConfigMobile);
+
+
+          function updateSwiperConfig() {
+            var screenWidth = window.innerWidth;
+
+            if (screenWidth <= 1024) {
+              if (screenWidth <= 768) {
+                swiper.params.direction = 'horizontal';
+                swiper.pagination.el.style.bottom = '-50px';
+                swiper.params.loop = true;
+                swiperMobile.update();
+              } else {
+                swiper.params.slidesPerView = 2;
+                swiper.params.spaceBetween = 20;
+                swiper.pagination.el.style.position = 'absolute';
+                swiper.pagination.el.style.bottom = '-40px';
+                swiper.params.loop = true;
+                swiper.update();
+              }
+
+              swiper.update();
+            } else {
+              swiper.params.slidesPerView = 3;
+              swiper.update();
+            }
+          }
+
+          window.addEventListener('resize', updateSwiperConfig);
+
+          updateSwiperConfig();
+        </script>
+      </section>
+        
+        <section>
+          <div class="bloc">
+            
+            <h1 class="avis">Il nous ont fait confiance ! À votre tour !</h1>
+              <div class="swiper-container3">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="avis__flex">
+                      <div class="avis__bloc avis__bloc--1">
+                        <h2>Services incroyable</h2>
+
+                        <p>Je recommande a 100%. En quelque mots : Rapide, efficace et c'est un plaisir d'échanger avec eux par téléphone :)</p>
+                        <p><span class="etoile">★★★★★</span> 5/5</p>
+                        <p>@Manelle BC <span class="date">2023-09-14</span></p>
+
+                      </div>
+                    </div>
+                  </div>
+                    
+                  <div class="swiper-slide">
+                    <div class="avis__flex">
+                      <div class="avis__bloc avis__bloc--2">
+                        <h2>Services incroyable</h2>
+
+                        <p>Je recommande a 100%. En quelque mots : Rapide, efficace et c'est un plaisir d'échanger avec eux par téléphone :)</p>
+                        <p><span class="etoile">★★★★★</span> 5/5</p>
+                        <p>@Manelle BC <span class="date">2023-09-14</span></p>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="swiper-slide">
+                    <div class="avis__flex">
+                      <div class="avis__bloc avis__bloc--3">
+                        <h2>Services incroyable</h2>
+
+                        <p>Je recommande a 100%. En quelque mots : Rapide, efficace et c'est un plaisir d'échanger avec eux par téléphone :)</p>
+                        <p><span class="etoile">★★★★★</span> 5/5</p>
+                        <p>@Manelle BC <span class="date">2023-09-14</span></p>
+                      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          var swiper = new Swiper('.swiper-container3', {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            direction: 'horizontal',
+            autoplay: {
+              delay: 10000,
+            },
+            loop: true,
+          });
+
+          function updateSwiperConfig() {
+            var screenWidth = window.innerWidth;
+
+            if (screenWidth <= 1024) {
+              if (screenWidth <= 768) {
+                swiper.params.slidesPerView = 1;
+                swiper.params.spaceBetween = 30;
+              } else {
+                swiper.params.slidesPerView = 2;
+                swiper.params.spaceBetween = 20;
+              }
+
+              swiper.update();
+            } else {
+              swiper.params.slidesPerView = 3;
+              swiper.update();
+            }
+          }
+
+          window.addEventListener('resize', updateSwiperConfig);
+
+          updateSwiperConfig();
+        </script>
+
+      </section>
+    
+      <section>
+        <div class="blocPartenaire">
+          <div class="containerPartenaire">
+            <h1 class="titrePartenaire">Vous avez un site e-commerce ou une boutique ?</h1>
+            <div class="blocStyle">
+              <p>Rejoignez nos partenaires et offrez de multiples services et avantages à vos clients. Augmentez votre chiffre d'affaire avec notre solution en financement.</p>
+            </div>
+    
+            <div class="btnPartenaire">
+              Devenir Partenaire →
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <footer>
+      <div class="basdepage">
+        <div class="basdepage__container">
+          <img src="https://cdn.discordapp.com/attachments/525265769479798784/1194303721249722429/image.png?ex=65afdd04&is=659d6804&hm=28c5195668755ac7ddc29e396df9ddcb3bfdf736dac5f65444ceb7876cb9485f&" alt="logo Siko Mobility">
+          <p class="contact">
+            contact@sikomobility.com</br>
+        86 rue Dutot, 75015 Paris</br>
+          </p>
+            
+          <p class="description">
+            Siko Mobility respecte les normes sociales et environnementales et s'inscrit dans une démarche de progrès.
+          </p>
+          <div class="informations">
+            <div class="informations__basdepage">
+              <h3>Informations</h3>
+              <a href="#">Mentions légales</a>
+              <a href="#">Conditions générales de vente</a>
+              <a href="#">Politique de confidentialité</a>
+              <a href="#">RGPD & Cookies</a>
+            </div>
+      
+            <div class="information__siko information__siko--2">
+              <h3>Siko Mobility</h3>
+              <a href="#">Accueil</a>
+              <a href="#">Devenir Partenaire</a>
+              <a href="#">Qui sommes-nous ?</a>
+              <a href="#">Contact</a>
+              <a href="#">FAQ</a>
+            </div>
+      
+            <div class="information__services">
+              <h3>Nos services</h3>
+              <a href="#">Nos services</a>
+              <a href="#">Assurance</a>
+              <a href="#">Forfait entretien</a>
+              <a href="#">Assistance dépannage</a>
+              <a href="#">Garantie 3 ans</a>
+            </div>
+          </div>
+
+          <div class="motcliquable">
+            <div>
+              <span class="mot" onclick="toggleListeMots(this)">Informations <span class="toggleswap toggleswap--1">+</span></span>
+              <div class="liste-mots">
+                <a href="#">Mentions légales</a>
+                <a href="#">Conditions générales de vente</a>
+                <a href="#">Politique de confidentialité</a>
+                <a href="#">RGPD & Cookies</a>
+              </div>
+            </div>
+            <div>
+              <span class="mot" onclick="toggleListeMots(this)">Siko Mobility <span class="toggleswap">+</span></span>
+              <div class="liste-mots">
+                <a href="#">Accueil</a>
+                <a href="#">Devenir partenaire</a>
+                <a href="#">Qui sommes-nous ?</a>
+                <a href="#">Contact</a>
+                <a href="#">FAQ</a>
+              </div>
+            </div>
+            <div>
+              <span class="mot" onclick="toggleListeMots(this)">Nos services <span class="toggleswap toggleswap--1">+</span></span>
+              <div class="liste-mots">
+                <a href="#">Nos services</a>
+                <a href="#">Assurance</a>
+                <a href="#">Forfait entretien</a>
+                <a href="#">Assistance dépannage</a>
+                <a href="#">Garantie 3 ans</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bordureTrait"></div>
+          <div class="bas">
+            <p class="droit">© 2021 Siko Mobility. Tous droits réservés.
+              <span class="droit__eloignement"><a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+
+      var swiper = new Swiper('.swiper-container2', {
+          slidesPerView: 2,
+          spaceBetween: 10,
+          navigation: {
+            nextEl: '.btnSwipe',
+            prevEl: '.btnSwipe2',
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+        });
+      function updateSwiperConfig() {
+        var screenWidth = window.innerWidth;
+    
+        if (screenWidth <= 1024) {
+          if (screenWidth <= 768) {
+            swiper.params.slidesPerView = 1;
+          } else {
+            swiper.params.slidesPerView = 2;
+          }
+    
+          swiper.update();
+        } else {
+          swiper.params.slidesPerView = 3;
+          swiper.update();
+        }
+      }
+    
+      window.addEventListener('resize', updateSwiperConfig);
+    
+      updateSwiperConfig();
+
+      function toggleListeMots(element) {
+        var listeMots = element.nextElementSibling;
+        var toggle = element.querySelector('.toggleswap');
+        if (listeMots.style.display === 'none') {
+          listeMots.style.display = 'block';
+          toggle.textContent = '-';
+        } else {
+          listeMots.style.display = 'none';
+          toggle.textContent = '+';
+        }
+      }
+    </script>
+  </body>
+</html>

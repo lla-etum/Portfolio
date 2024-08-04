@@ -1,0 +1,104 @@
+body {
+  background-color: #f2f5f9;
+  margin: 0;
+}
+
+nav {
+  background-color: white;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.navbar {
+  font-size: 1.4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titre {
+  font-weight: 600;
+  color: #54a7e6;
+  padding-right: 20rem;
+}
+
+.option {
+  display: flex;
+}
+
+.option1 {
+  cursor: pointer;
+}
+
+.option2 {
+  cursor: pointer;
+  padding-left: 1rem;
+}
+
+.option1:hover {
+  color: #52a7e6;
+}
+
+.option2:hover {
+  color: #52a7e6;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.boite {
+  font-size: 3em;
+  font-weight: 600;
+  padding: 0 20px;
+  color: white;
+  border: 1px transparent solid;
+  border-radius: 5px;
+  background-color: black;
+}
+
+#clickme {
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 2rem;
+  font-size: 1.5em;
+  border: 2px black solid;
+  border-radius: 10px;
+  padding: 5px 30px;
+}
+
+#clickme:hover {
+  animation: couleur-transition 500ms forwards;
+}
+
+#clickeme:not(:hover) {
+  animation: couleur-reverse 1000ms;
+}
+
+@keyframes couleur-transition {
+  from {
+    background-color: white;
+  }
+  to {
+    color: white;
+    background-color: black;
+  }
+}
+
+@keyframes couleur-reverse {
+  from {
+    color: white;
+    background-color: black;
+  }
+
+  to {
+    background-color: white;
+  }
+}
