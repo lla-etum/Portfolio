@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2a3a72f42115a37d462b06c78c2bef76d34a8567ee85777789154b8b274bc87e
-size 1109
+let generation = document.querySelector(".loading");
+let choix = document.getElementById("choix");
+let bouton = document.querySelector(".bouton");
+
+function genererLoremIpsum(n) {
+    const mots = 'lorem ipsum dolor sit amet consectetur adipiscing elit'.split(' ');
+    const resultat = [];
+    for(let i = 0; i < n; i++) {
+        const paragraphe = [];
+        const nombreDeMots = Math.floor(Math.random() * 100) + 1; // Génère un nombre aléatoire de mots pour chaque paragraphe
+        for(let j = 0; j < nombreDeMots; j++) {
+            const indexAleatoire = Math.floor(Math.random() * mots.length);
+            paragraphe.push(mots[indexAleatoire]);
+        }
+        resultat.push(paragraphe.join(' '));
+    }
+    return resultat.join('<br><br>'); // Remplacez '\n\n' par '<br><br>'
+}
+
+function choixUtilisateur() {
+    choix.addEventListener("change", () => {
+        choix.textContent = this.value;
+    });
+}
+
+bouton.addEventListener("click", () => {
+    var nombreParagraphes = choix.value;
+
+    var loremIpsum = genererLoremIpsum(nombreParagraphes);
+
+    generation.innerHTML = loremIpsum;
+});

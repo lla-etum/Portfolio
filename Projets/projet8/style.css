@@ -1,3 +1,160 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6c2136dba064775f80612b9f5288af6a1d32d1a8f42efc79a90c0efe056583df
-size 2549
+body {
+    background-color: #f1f5f9;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 2.6em;
+}
+
+h3 {
+    margin: -1rem 0 -0.5rem 0;
+    color: #51b1ec;
+}
+
+.sousligne {
+    margin-top: -1rem;
+    border: 1px solid transparent;
+    background-color: #51a7e6;
+    padding: 1px 35px;
+    margin-left: 0.8rem;
+}
+
+.presentation {
+    margin-top: 4rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 34%;
+    height: 47%;
+}
+
+.anna {
+    text-align: center;
+    width: 90%;
+}
+
+.peter {
+    text-align: center;
+    width: 93%;
+}
+
+.bill {
+    text-align: center;
+    width: 90%;
+}
+
+.susan {
+    text-align: center;
+    width: 90%;
+}
+
+img {
+    position: relative;
+    z-index: 2;
+    border-radius: 50%;
+    width: 28%;
+    height: auto;
+}
+
+.profile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.circle {
+    z-index: 1;
+    background-color: #51a7e6;
+    border-radius: 50%;
+    position: absolute;
+    top: -2.5%;
+    left: 38.4%;
+    padding: 4.9rem;
+}
+
+.guillmet {
+    padding: 0 17px;
+    position: absolute;
+    top: 5%;
+    left: 33%;
+    z-index: 3;
+    font-size: 3em;
+    color: white;
+    background-color: #51a7e6;
+    border-radius: 50%;
+}
+
+p {
+    font-size: 1.2em;
+    color: #899cb1;
+}
+
+.swipe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.swipe-left {
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    border: 3px solid #8eccf7;
+    border-left: 0;
+    border-top: 0;
+    
+    transform: rotate(135deg);
+    transition: border 500ms ease;
+}
+
+.swipe-left:hover {
+    border-right: 3px solid blue;
+    border-bottom: 3px solid blue;
+}
+
+.swipe-right {
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    border: 3px solid #8eccf7;
+    border-left: 0;
+    border-top: 0;
+    
+    transform: rotate(315deg);
+    transition: border 500ms ease;
+}
+
+.swipe-right:hover {
+    border-right: 3px solid blue;
+    border-bottom: 3px solid blue;
+}
+
+.aleatoire {
+    cursor: pointer;
+    padding: 3px 9px;
+    color: #51a7e6;
+    border: 2px solid #51a7e6;
+    border-radius: 10px;
+    background-color: #ebf7ff;
+    margin-top: 1rem;
+    transition: background-color 500ms ease;
+}
+
+.aleatoire:hover {
+    color: black;
+    background-color: #51a7e6;
+}

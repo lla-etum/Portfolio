@@ -1,3 +1,147 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c0c06d2d65e0344a1be2ae2e0211d72fa2a383c62a09821c8ba8ebf189125608
-size 2486
+body {
+    background-color: #f1f5f9;
+    margin-top: 8rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    flex-direction: column;
+}
+
+.boite {
+    border: 1px solid transparent;
+    background-color: white;
+    padding: 1.8rem 2rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: box-shadow 500ms;
+}
+
+.boite:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: box-shadow 500ms;
+}
+
+.added, .changed {
+    display: none;
+    color: #8bb396;
+    padding: 0.2rem 0;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #d4eddb;
+}
+
+.error, .empty, .removed {
+    display: none;
+    color: #711a25;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0.2rem 0;
+    background-color: #f8d7da;
+}
+
+.truc {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+#liste {
+    font-size: 1em;
+    padding-left: 1rem;
+}
+
+.ajout {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    padding: 0.3rem 1rem;
+    margin: 0.5rem 0;
+    text-transform: capitalize;
+}
+
+.ajout:hover {
+    background-color: #f1f5f9;
+    border-radius: 10px;
+}
+
+i {
+    font-size: 0.6em;
+    cursor: pointer;
+}
+
+.fa-pen-to-square {
+    color: #6ae67d;
+    transition: color 500ms;
+}
+
+.fa-pen-to-square:hover {
+    color: #22bc40;
+    transition: color 500ms;
+}
+
+.fa-trash {
+    margin-left: 1rem;
+    color: #e4696c;
+    transition: color 500ms;
+}
+
+.fa-trash:hover {
+    color: #ba1f27;
+    transition: color 500ms;
+}
+
+.bouton {
+    margin-left: 1px;
+    cursor: pointer;
+    font-size: 1.1em;
+    border: 1px solid transparent;
+    background-color: #a7d6f7;
+    text-align: center;
+    padding: 3px 10px;
+    border-radius: 0 8px 8px 0;
+    width: 80px;
+    transition: background-color 500ms, color 500ms;
+}
+
+.bouton:hover {
+    color: white;
+    background-color: #50a7e7;
+    transition: background-color 500ms, color 500ms;
+}
+
+input {
+    color: #637d98;
+    width: 400px;
+    background-color: #f1f5f9;
+    border: none;
+    border-radius: 8px 0 0 8px;
+}
+
+.clear {
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    font-size: 1.1em;
+    cursor: pointer;
+    color: #e8696c;
+    transition: color 500ms;
+}
+
+.clear:hover {
+    color: #ba1f27;
+    transition: color 500ms;
+}
+
+.edit {
+    display: none;
+}
