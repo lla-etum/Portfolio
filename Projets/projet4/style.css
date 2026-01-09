@@ -1,6 +1,5 @@
 @import url('https://forts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-/* Pour centrer le Login Form et nouvelle police d'écriture */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #1abc9b;
@@ -11,7 +10,6 @@ body {
     margin: 0;
 }
 
-/* La boite blanche au centre */
 .centered-box {
     position: relative;
     border: 1px transparent solid;
@@ -21,7 +19,6 @@ body {
     background-color: #ffffff;
 }
 
-/* Le haut de la boite (vert) */
 .top-box {
     border: 1px transparent solid;
     border-radius: 9px 9px 0px 0px;
@@ -34,7 +31,6 @@ body {
     transform: translate(-50%, -50%);
 }
 
-/* Titre Login Form */
 h1 {
     text-align: center;
     color: white;
@@ -42,7 +38,6 @@ h1 {
     padding-top: 15px;
 }
 
-/*  */
 .connexion {
     position: absolute;
     top: 45%;
