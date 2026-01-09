@@ -67,7 +67,7 @@ bars.addEventListener("click", () => {
         lien3.setAttribute("style", "max-height:500px;");
         lien3.setAttribute("style", "display:block;");
         Array.from(lien3.children).forEach((child, i) => {
-            child.style.animationDelay = `${i * 0.1}s`; // Chaque élément apparaîtra avec un délai de 0.1s par rapport au précédent
+            child.style.animationDelay = `${i * 0.1}s`;
         });
         changement = true;
         window.addEventListener("scroll", () => {
@@ -94,7 +94,7 @@ bars.addEventListener("click", () => {
         lien3.setAttribute("style", "max-height:0;");
         lien3.setAttribute("style", "display:none;");
         Array.from(lien3.children).forEach((child) => {
-            child.style.animationDelay = ""; // Réinitialiser le délai d'animation
+            child.style.animationDelay = "";
         });
         changement = false;
     }
