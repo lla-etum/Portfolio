@@ -3,7 +3,7 @@ let heures = document.querySelector(".heures span");
 let minutes = document.querySelector(".minutes span");
 let secondes = document.querySelector(".secondes span");
 
-let compteur = 950400; // 11 jours en secondes
+let compteur = 950400;
 
 function formatTemps(secs) {
     let heures = Math.floor(secs / 3600);
@@ -26,8 +26,8 @@ function decrementerCompteur() {
         compteur--;
     } else {
         document.querySelector('.timer').innerText = "Le compte à rebours est terminé !";
-        clearInterval(intervalId); // Arrête le compte à rebours
+        clearInterval(intervalId);
     }
 }
 
-let intervalId = setInterval(decrementerCompteur, 1000); // Appelle la fonction decrementerCompteur toutes les secondes
+let intervalId = setInterval(decrementerCompteur, 1000);
