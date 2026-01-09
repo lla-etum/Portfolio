@@ -43,26 +43,20 @@ function ajout() {
 
     icone.addEventListener("click", () => {
 
-        // Stockez une référence à la div que vous modifiez
         divEnCoursDeModification = div;
 
-        // Mettez le texte de la div dans l'élément 'input'
         input.value = div.querySelector(".texte").textContent;
 
         submit.setAttribute("style", "display:none;");
         edit.setAttribute("style", "display:block;");
     });
 
-    // Lorsque vous cliquez sur "edit" pour terminer la modification :
     edit.addEventListener("click", () => {
         if (divEnCoursDeModification) {
             divEnCoursDeModification.querySelector(".texte").textContent = input.value;
-
-            // Réinitialisez divEnCoursDeModification
             divEnCoursDeModification = null;
         }
 
-        // ... (le reste de votre code)
         changed.setAttribute("style", "display:block;");
         added.setAttribute("style", "display:none;");
         erreur.setAttribute("style", "display:none;");
