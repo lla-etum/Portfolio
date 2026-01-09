@@ -7,14 +7,14 @@ function genererLoremIpsum(n) {
     const resultat = [];
     for(let i = 0; i < n; i++) {
         const paragraphe = [];
-        const nombreDeMots = Math.floor(Math.random() * 100) + 1; // Génère un nombre aléatoire de mots pour chaque paragraphe
+        const nombreDeMots = Math.floor(Math.random() * 100) + 1;
         for(let j = 0; j < nombreDeMots; j++) {
             const indexAleatoire = Math.floor(Math.random() * mots.length);
             paragraphe.push(mots[indexAleatoire]);
         }
         resultat.push(paragraphe.join(' '));
     }
-    return resultat.join('<br><br>'); // Remplacez '\n\n' par '<br><br>'
+    return resultat.join('<br><br>');
 }
 
 function choixUtilisateur() {
