@@ -11,7 +11,7 @@ import tictac from "../../image/tictactoe.png"
 import timer from "../../image/Timer.png"
 import calculator from "../../image/calculator.png"
 
-const IntroPage = styled.body`
+const IntroPage = styled.main`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -932,7 +932,7 @@ function Portfolio() {
                         <PresentationBox style={{ backgroundColor: boxColor, border: `1px solid ${traitColor}`}}>
                             <h3>{t('Salut :)')}</h3>
                             <p>
-                            {t("👋 Je m'appelle Christian J. Je suis un débutant sur React. Ce que vous voyez est un template de Dorota1997. Si vous aimez ce template , cliquez sur ⭐ du dépôt afin que ça soit vu par d'autres utilisateurs. Merci 💜")}
+                            {t("👋 Je m'appelle Christian J. Étudiant en intégration web, j'ai réalisé ce portfolio pour m'initier aux concepts de React (State, Props, Styled-components). C'est un projet d'auto-formation.")}
                             </p>
                         </PresentationBox>
                     </div>
@@ -1119,7 +1119,7 @@ function Portfolio() {
                             <AnimatedCercleElement1 isVisible1={isVisible1} angular={angular} angularFond={angularFond}>
                                 <FaAngular />
                             </AnimatedCercleElement1>
-                            <AnimatedP isVisible1={isVisible1} datePresent={datePresent}>09.2022 - present</AnimatedP>
+                            <AnimatedP isVisible1={isVisible1} datePresent={datePresent}>09.2022</AnimatedP>
                         </div>
                     </ElementBarre>
                     <div ref={ref2}>
@@ -1127,7 +1127,7 @@ function Portfolio() {
                             <ExperienceMain style={{backgroundColor: angularFond, color: boxFond, width: "33px"}}>
                                 React
                             </ExperienceMain>
-                            <h4>{t('Intégrateur Web')}</h4>
+                            <h4>{t('Projet Personnel')}</h4>
                             <p>{t('Débutant')}</p>
                             <ExperienceSkills>
                                 <ExperienceBox style={{backgroundColor: boxP, color: boxFondLang}}>
